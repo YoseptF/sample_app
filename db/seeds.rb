@@ -10,7 +10,8 @@ User.create(
   name: 'joseph',
   email: 'yosept.flores@gmail.com',
   password: '123lol',
-  password_confirmation: '123lol'
+  password_confirmation: '123lol',
+  admin: true
 )
 User.create(
   name: 'saul',
@@ -19,7 +20,12 @@ User.create(
   password_confirmation: '528322'
 )
 
-10.times do |i|
+User.create!(name:  "Example User",
+  email: "example@railstutorial.org",
+  password:              "foobar",
+  password_confirmation: "foobar")
+
+99.times do |i|
   User.create(
     name: Faker::Name.name,
     email: Faker::Internet.email,
