@@ -14,7 +14,7 @@ gem 'will_paginate', '>= 3.1.7'
 # Use Puma as the app server
 
 # Use SCSS for stylesheets
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 3.12'
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
