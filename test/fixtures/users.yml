@@ -5,15 +5,21 @@ joseph:
   email: yosept.flores@gmail.com
   password_digest: <%= User.digest('123lol') %>
   admin: true
+  activated: true
+  activated_at: <%= Time.zone.now %>
 
 alfredo:
   name: Alfredo
   email: alfredo@gmail.com
   password_digest: <%= User.digest('123lol') %>
+  activated: true
+  activated_at: <%= Time.zone.now %>
   
 <% 30.times do |n| %>
 user_<%= n %>:
   name: <%= Faker::Name.name %>
   email: <%= Faker::Internet.email %>
   password_digest: <%= User.digest('123lol') %>
+  activated: true
+  activated_at: <%= Time.zone.now %>
 <% end %>

@@ -11,25 +11,34 @@ User.create(
   email: 'yosept.flores@gmail.com',
   password: '123lol',
   password_confirmation: '123lol',
-  admin: true
+  admin: true,
+  activated: true,
+  activated_at: Time.zone.now
 )
 User.create(
   name: 'saul',
   email: 'fell_my_power@live.com',
   password: '528322',
-  password_confirmation: '528322'
+  password_confirmation: '528322',
+  activated: true,
+  activated_at: Time.zone.now
 )
 
 User.create!(name:  "Example User",
   email: "example@railstutorial.org",
   password:              "foobar",
-  password_confirmation: "foobar")
+  password_confirmation: "foobar",
+  activated: true,
+  activated_at: Time.zone.now
+)
 
 99.times do |i|
   User.create(
     name: Faker::Name.name,
     email: Faker::Internet.email,
     password: "#{i}__lol",
-    password_confirmation: "#{i}__lol"
+    password_confirmation: "#{i}__lol",
+    activated: true,
+    activated_at: Time.zone.now
   )
 end
